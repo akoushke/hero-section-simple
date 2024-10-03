@@ -1,16 +1,4 @@
 import Image from "next/image";
-import localFont from "next/font/local";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export default function Home() {
   return (
@@ -33,7 +21,13 @@ export default function Home() {
         </div>
       </div>
       <div className="col-span-4 md:col-span-6 w-full">
-        <img src="/hero-section-simple/prism.png" alt="" loading="lazy" />
+        <Image
+          src="/prism.png"
+          alt="Prism photo"
+          layout="responsive"
+          width={16}
+          height={9}
+        />
       </div>
     </div>
   );
