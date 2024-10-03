@@ -22,7 +22,7 @@ export default function Home() {
       </div>
       <div className="col-span-4 md:col-span-6 w-full">
         <Image
-          src="/prism.png"
+          src="/hero-section-simple/prism.png"
           alt="Prism photo"
           layout="responsive"
           width={16}
