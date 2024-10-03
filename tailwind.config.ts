@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type {Config} from "tailwindcss";
 
 const config: Config = {
   content: [
@@ -7,13 +7,25 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "375px",
+      md: "768px",
+      lg: "1440px",
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "16px",
+        sm: "16px",
+        md: "32px",
+        lg: "32px",
+      },
+    },
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        noto: "Noto Sans, sans-serif",
       },
     },
   },
-  plugins: [],
 };
 export default config;
